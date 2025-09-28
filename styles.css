@@ -1,0 +1,226 @@
+/* Botón flotante WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 15px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.whatsapp-float:hover {
+  background-color: #1DA851;
+}
+
+/* Tipografía y Reset */
+body {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+.hero-banner {
+  height: 60vh; /* antes 100vh, ahora más bajo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: url('/concepto-de-contenido-de-tecnologia-en-linea-de-diseno-web.jpg') no-repeat center center/cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-banner h1 {
+  font-size: 3rem; /* un poco más pequeño si quieres */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fadeSlideIn 1s forwards 0.3s;
+}
+
+.hero-banner p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeSlideIn 1s forwards 0.6s;
+}
+
+.hero-banner a.btn {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 1s forwards 0.9s;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Animación fade + slide */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón WhatsApp flotante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 15px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  animation: bounceIn 1s forwards;
+}
+
+/* Bounce animation */
+@keyframes bounceIn {
+  0% { transform: scale(0); }
+  60% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+/* Navbar links hover */
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* Footer icon hover */
+footer a {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer a:hover {
+  color: #0d6efd;
+  transform: scale(1.2);
+}
+
+
+    .plans .card {
+        transition: transform 0.2s, box-shadow 0.2s;
+        border-radius: 1rem;
+        min-height: 480px;
+    }
+    .plans .card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+        z-index: 2;
+    }
+    .plans .card-body i {
+        filter: drop-shadow(0 2px 6px #007bff33);
+    }
+    .plans .card-title {
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+    .plans .card h6 {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    .plans .btn {
+        border-radius: 2rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+    @media (max-width: 991px) {
+        .plans .row > .col-md-4 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    @media (max-width: 767px) {
+        .plans .row > .col-md-4 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .plans .card {
+            min-height: 0;
+        }
+    }
